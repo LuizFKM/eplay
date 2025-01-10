@@ -1,6 +1,5 @@
 import { useState } from 'react'
 
-import { GalleryItem } from '../../Pages/Home'
 import Section from '../Section'
 
 import play from '../../assets/images/play.png'
@@ -75,6 +74,7 @@ const Gallery = ({ defaultCover, name, items }: Props) => {
           <header>
             <h4>{name}</h4>
             <img
+              className="close-icon"
               src={closeIcon}
               alt="Clique aqui para fechar"
               onClick={closeModal}
